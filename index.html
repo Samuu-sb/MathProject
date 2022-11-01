@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora de Matrices 3x3</title>
+</head>
+<body>
+    <h1>Calculadora de Matrices 3x3</h1>
+    <section class="fatherContainer">
+        <h2 class="titleA">Matriz A</h2>
+        <div class="containerA"> 
+            <input type="number" class="m1f1" id="Af1c1">
+            <input type="number" class="m1f1" id="Af1c2">
+            <input type="number" class="m1f1" id="Af1c3">
+            <input type="number" class="m1f2" id="Af2c1">
+            <input type="number" class="m1f2" id="Af2c2">
+            <input type="number" class="m1f2" id="Af2c3">
+            <input type="number" class="m1f3" id="Af3c1">
+            <input type="number" class="m1f3" id="Af3c2">
+            <input type="number" class="m1f3" id="Af3c3">
+        </div>
+        <div class="containerA1">
+            <button onclick="transpuestaDeA()">
+                <span class="edge"></span>
+                <span class="front text"> Transpuesta de A
+                </span>            
+            </button>
+        </div>
+
+        <div class="middleContainer">
+            <button id="a-plus-b" class="suma" onclick="sumaDeMatrices()"><span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front text"> A + B
+                </span></button>
+            <button id="a-minus-b" class="resta" onclick="restaDeMatrices()">
+                <span class="edge"></span>
+                <span class="front text"> A - B
+                </span>
+            </button>
+            <button id="a-times-b" class="mult" onclick="multiplicacionDeMatrices()">
+                <span class="edge"></span>
+                <span class="front text"> A * B
+                </span>
+            </button>
+        </div>
+
+        <h2 class="titleB">Matriz B</h2>
+        <div class="containerB">
+            <input type="number" class="m2f1" id="Bf1c1">
+            <input type="number" class="m2f1" id="Bf1c2">
+            <input type="number" class="m2f1" id="Bf1c3">
+            <input type="number" class="m2f2" id="Bf2c1">
+            <input type="number" class="m2f2" id="Bf2c2">
+            <input type="number" class="m2f2" id="Bf2c3">
+            <input type="number" class="m2f3" id="Bf3c1">
+            <input type="number" class="m2f3" id="Bf3c2">
+            <input type="number" class="m2f3" id="Bf3c3">
+        </div>
+        <div class="containerB1">
+            <button onclick="transpuestaDeB()">
+                <span class="edge"></span>
+                <span class="front text"> Transpuesta de B
+                </span>            
+            </button>
+        </div>
+        <div class="containerC">
+            <p id="result"></p>
+            <p id="result1"></p>
+            <p id="result2"></p>
+            <p id="result3"></p>
+            <p id="result4"></p>
+            <p id="result5"></p>
+            <p id="result6"></p>
+            <p id="result7"></p>
+            <p id="result8"></p>
+        </div>    
+</section>
+<script src="./script.js"></script>
+</body>
+</html>
